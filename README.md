@@ -3,11 +3,11 @@
 This is the public release of an old project of mine, that I worked on from
 Sept 2018 to Jan 2023.
 
-The repo contains the assembler and the VM. I have also made a programming
-language along with graphics API libraries and other things, but it is hidden
-for now as I am using it to develop an OS on my new ISA. Piculet is more of
-bytecode than an ISA, and it's not a very good one either. Nonetheless, it is
-my most impressive (nearly) complete project.
+Along with the specification, this repo contains the assembler and the VM. I
+have also made a programming language along with graphics API libraries and
+other things, but it is hidden for now as I am using it to develop an OS on my
+new ISA. Piculet is more of bytecode than an ISA, and it's not a very good one
+either. Nonetheless, it is my most impressive (nearly) complete project.
 
 ## About This Release
 
@@ -55,7 +55,7 @@ To then run an assembly file through the assembler, run:
 This will result in an `out.bin` file being created.
 
 Additionally, to output all assembled shaders into shader bytecode files
-("_shader0", "_shader1", ...), run:
+(`_shader0`, `_shader1`, ...), run:
 
 `./asm file.s -s`
 
