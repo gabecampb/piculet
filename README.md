@@ -23,8 +23,8 @@ by repeating render passes multiple times. A LOT of work went into designing
 the graphics API, which is quite closely modeled after modern graphics APIs.
 
 In addition to the public maybe finding it fun to play with, releasing it here
-in this complete, single repo format allows me to feel like some kind of
-closure with this project that I've long moved on from.
+in this complete, single repo format allows me to feel some kind of closure
+with this project that I've long moved on from.
 
 ## Licensing
 
@@ -46,7 +46,7 @@ but I never implemented them.
 
 To build the assembler, run:
 
-`cc assembler.c -o asm`
+`cc asm.c -o asm`
 
 To then run an assembly file through the assembler, run:
 
