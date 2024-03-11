@@ -69,7 +69,7 @@ uint8_t show_program_info, show_about, enable_vsync;
 #define THR_0_RESTRICT_INS_RANGE 0 /* force thread 0 to have instruction memory range that spans only the boot-loaded program instead of entire main memory; only for testing */
 
 #define STD_OUTPUT 1 /* whether or not to allow using the standard output register to print to console */
-const char* WINDOW_TITLE = "Pier VM";
+const char* WINDOW_TITLE = "Piculet VM";
 
 uint32_t window_width = 500;
 uint32_t window_height = 340;
@@ -6052,7 +6052,7 @@ int main(int argc, char* argv[]) {
 	if(!process_args(argc, argv)) return 1;
 
 	if(show_about) {
-		printf("Pier VM (build %d)\n", BUILD_VER);
+		printf("Piculet VM (build %d)\n", BUILD_VER);
 		printf("Developed by Gabriel Campbell\n");
 		printf("- github.com/gabecampb\n\n");
 	}
