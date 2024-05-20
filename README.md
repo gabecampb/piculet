@@ -11,8 +11,8 @@ either. Nonetheless, it is my most impressive (nearly) complete project.
 
 ## About This Release
 
-This was my main hobby project of mine for a few years. I do not write my code
-like this anymore and I'm aware that this project has various flaws.
+This was my main hobby project for a few years. I do not write my code like this
+anymore and I'm aware that this project has various flaws.
 
 I am releasing it simply because it's an interesting project. A lot of very
 specific design choices were made when I was working on the graphics side of
@@ -31,7 +31,7 @@ with this project that I've long moved on from.
 For the specification, all rights are reserved. You can implement a VM based on
 it, but not for commercial use.
 
-For the VM, assembler, and code examples, the MIT license applies. I do not
+For the VM, assembler, and code examples, the MIT license applies. I don't
 care what you do with it as long as attribution is given.
 
 ## Features
@@ -54,8 +54,9 @@ To then run an assembly file through the assembler, run:
 
 This will result in an `out.bin` file being created.
 
+
 Additionally, to output all assembled shaders into shader bytecode files
-(`_shader0`, `_shader1`, ...), run:
+(`_shader0`, `_shader1`, ...), you can run:
 
 `./asm file.s -s`
 
@@ -80,14 +81,13 @@ assembly programs that I was using for testing the VM. `push.s`, `quad.s`, and
 `texture.s` examples all use a push constant for supplying data to the shader.
 `uniform.s` uses a UBO for supplying data to the shader.
 
-The assembly files were not cleaned up - copied exactly as they were in my old
+The assembly files weren't cleaned up - copied exactly as they were in my old
 folders. There are commented out bits of code (mostly in shaders) that do extra
 stuff which I left in because it gives you more view of what the shader
-assembler looks like. There are also many comments that make no sense because
-they were simply notes for myself when I was writing the programs.
+assembler looks like.
 
 ## That's All?
 
 Yes, unfortunately that's all the documentation I have for this at the moment.
 This isn't really a project I work on anymore. Read the spec if you want more
-info, that's the big thing here. I will consider adding more here in the future.
+info, that's the biggest thing here.
