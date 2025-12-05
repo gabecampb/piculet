@@ -1,0 +1,62 @@
+This repo contains the assembler, the VM, and the specification of Piculet, a
+bytecode that I developed some years ago.
+
+Piculet is an old project that I worked on throughout a period of my life
+roughly spanning from 2018-10 to 2023-01, from high school to my early
+university years. Not included, there was also a programming language to target
+this bytecode, as well as a graphics API and other libraries that I worked on.
+
+
+
+	-----------------------------------
+	ABANDON HOPE, ALL YE WHO ENTER HERE
+	-----------------------------------
+
+
+The code quality here is absolutely horrific and you do not want to witness it.
+Turn and run in the other direction as fast as you can. It all works, however I
+originally wrote it as if I were an idiot and while I'd like to clean it up
+today, my efforts are really best spent elsewhere on better, properly structured
+projects. Alas, Piculet is still a fine accomplishment so I feel okay wearing
+this dunce hat with pride. Plus, the jank gives it a little extra character!
+
+One of the key reasons this project was abandoned was it was primarily designed
+with game engines in mind, and not with the sufficient memory isolation,
+threading, or interrupt mechanisms required for OS development, which I've had
+long interest in eventually diving into.
+
+I do think of this project more as a practice run for subsequently inventing
+Piculet's successor - a proper instruction set with all the bells and whistles
+you'd find on a real CPU, and its carefully optimized emulator.
+
+
+
+	---------
+	LICENSING
+	---------
+
+
+Specification: all rights reserved.
+Everything else (excluding the third-party nothings/stb files) is MIT.
+
+
+
+	-----
+	USAGE
+	-----
+
+
+To use the assembler (outputs a file ./out.bin):
+	cc asm.c -o asm
+	./asm file.s
+
+	Option -s outputs each assembled shader to a file (_shader0, _shader1, ...)
+	Option -v prints unused label warnings
+
+
+To use the VM (GLFW, GL 3.1+ - Linux, BSD, likely MacOS):
+	cc vm.c -o vm -lGL -lglfw -lm
+	./vm out.bin
+
+
+For example programs see /demos/ - hand-written assembly I used while testing.
